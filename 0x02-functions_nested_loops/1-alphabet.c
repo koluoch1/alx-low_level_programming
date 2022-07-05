@@ -1,22 +1,31 @@
-#include <stdio.h>
- int main(void)
+#include "main.h"
+
+/**
+ *
+ *  * print_alphabet - function to print abc
+ *
+ *   *
+ *
+ *    * Return: 0
+ *
+ *     */
+
+void print_alphabet(void)
 
 {
 
-		char letter;
+	        char c;
 
 
 
-			for (letter = 'a'; letter <= 'z'; letter++)
+		        for (c = 'a'; c <= 'z'; c++)
 
-						putchar(letter);
+				        {
 
+						                _putchar(c);
 
+								        }
 
-				putchar('\n');
-
-
-
-					return (0);
+			_putchar('\n');
 
 }
