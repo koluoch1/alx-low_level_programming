@@ -1,18 +1,18 @@
-#include "main.h"
-
-
-
 /**
  *
- * * main - prints putchar
+ *  * main - function to print
  *
- * * Return: always 0
+ *   *
  *
- * */
+ *    * Return: 0
+ *
+ *     */
 
 int main(void)
 
 {
+
+
 
 		_putchar('_');
 
