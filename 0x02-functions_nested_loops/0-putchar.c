@@ -1,4 +1,5 @@
-#inlcude ‘main.h’
+#include <unistd.h>
+#inlcude "main.h"
 
 int main(void)
 
@@ -21,7 +22,7 @@ int main(void)
 	_putchar(‘r’);
 
 	_putchar(‘\n’);
-
+return(0);
 }
 
 
