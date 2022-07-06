@@ -1,49 +1,73 @@
-include "main.h 
+#include <stdio.h>
 
-*	print_remaining_days - takes a date and prints how many days are
-*
-*	*	left in the year, taking leap years into account
-*
-*	*	@month: month in number format
-*
-*	*	@day: day of month
-*
-*	 * @year; year
-*
-*	 Return: void
-*
-*	 */
+#include "main.h"
 
 
 
-void print_remaining_days(int month. int day. int year)
+/**
+ *
+ * * print_remaining_days - takes a date and prints how many days are
+ *
+ * * left in the year, taking leap years into account
+ *
+ * * @month: month in number format
+ *
+ * * @day: day of month
+ *
+ * * @year: year
+ *
+ * * Return: void
+ *
+ * */
 
-	if ((year % 100 == D && year % 400 = 0) II (year % 4 == 0))
+
+
+void print_remaining_days(int month, int day, int year)
 
 {
 
-	if (month > 2 && day r.= 60)
+	    if ((year % 4 == 0 || year % 400 == 0) || (year % 400 == 0 && year %100 == 0))
 
-	{
+		        {
 
-		day++:
+				        if (month >= 2 && day >= 60)
 
-			printf("Day of the year: %d\n", day); printff-Remaining days; %An". 366 - day):
+						        {
 
-			1
+								            day++;
 
-			else
+									            }
 
-			{
 
-				if (month = 2 && day == 60)
 
-					printf("Invalid date: %0205:02def04d n". month. day - 31. year);
+					        printf("Day of the year: %d\n", day);
 
-				I else
+						        printf("Remaining days: %d\n", 366 - day);
 
-					printf("Day of the year: VIVI-. day); printf("Remaining days: %d\n", 365 - day);
+							    }
 
-			}
+	        else
 
-	}
+			    {
+
+				            if (month == 2 && day == 60)
+
+						            {
+
+								                printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+
+										        }
+
+					            else
+
+							            {
+
+									                printf("Day of the year: %d\n", day);
+
+											            printf("Remaining days: %d\n", 365 - day);
+
+												            }
+
+						        }
+
+}
