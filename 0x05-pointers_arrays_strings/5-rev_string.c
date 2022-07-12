@@ -1,12 +1,8 @@
 #include "main.h"
 
-
 /**
- *
  * rev_string - Reverses a string.
- *
  * @s: string to be reserved.
- *
  */
 
 void rev_string(char *s)

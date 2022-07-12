@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- *
  * _puts -> this is a function that puts
  *  @str: a param to puts function
- *
  */
 
 
