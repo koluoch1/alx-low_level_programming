@@ -1,10 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
- * main - entry point
- *
- * return: 0 after printing the function
+ * main - prints string
+ * Return: 0 always
  */
+
 int main(void)
-{puts("/"Programming is like building a multiligual puzzle")';
-	return(0);
+
+{
+
+puts("\"Programming is like building a multilingual puzzle");
+
+return (0);
+
 }
