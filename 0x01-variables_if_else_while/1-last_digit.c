@@ -10,6 +10,7 @@
  */
 
 int main(void)
+
 {
 int n, lasDigit;
 srand(time(0));
@@ -24,6 +25,7 @@ else if (lasDigit == 0)
 printf("Last digit of %d is %d and is 0\n", n, lasDigit);
 }
 else
+{
 printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lasDigit);
 }
 return (0);
